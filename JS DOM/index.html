@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home Page</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="input1-container">
+      <label for="input1">Input 1: </label>
+      <input
+        id="input1"
+        type="text"
+        placeholder="rows # columns # start_val"
+        required
+      />
+
+      <br />
+      <br />
+
+      <button
+        type="button"
+        onclick="createTable(document.getElementById('input1').value, 1)"
+      >
+        Create table 1
+      </button>
+    </div>
+
+    <br />
+    <br />
+
+    <div id="input2-container">
+      <label for="input2">Input 2: </label>
+      <input
+        id="input2"
+        type="text"
+        placeholder="rows # columns # start_val"
+        required
+      />
+
+      <br />
+      <br />
+
+      <button
+        type="button"
+        onclick="createTable(document.getElementById('input2').value, 2)"
+      >
+        Create table 2
+      </button>
+    </div>
+
+    <br /><br />
+    <button type="button" onclick="calcTable()">Create table 3</button>
+
+    <br />
+    <br />
+
+    <div id="table1-container"></div>
+
+    <br />
+    <br />
+
+    <div id="table2-container"></div>
+
+    <br />
+    <br />
+
+    <div id="table3-container"></div>
+  </body>
+</html>
