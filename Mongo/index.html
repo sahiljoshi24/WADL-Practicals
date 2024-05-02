@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music DB</title>
+  </head>
+  <body>
+    <form action="/insert5">
+      <label for="insert">Insert 5 songs :</label>
+      <button id="insert">Click Me!</button>
+    </form>
+    <hr />
+    <form action="/totalcount">
+      <label for="alldocs">All Songs :</label>
+      <button id="alldocs">Click Me!</button>
+    </form>
+    <hr />
+    <form action="/musicd" method="post">
+      <label for="musicd">Music Director :</label>
+      <input
+        type="text"
+        name="musicd"
+        id="musicd"
+        placeholder="enter music director"
+      />
+      <button>Click Me!</button>
+    </form>
+    <hr />
+    <form action="/musicd/singer" method="post">
+      <label for="musicd">Music Director :</label>
+      <input
+        type="text"
+        name="musicd"
+        id="musicd"
+        placeholder="enter music director"
+      />
+      <br />
+      <label for="singer">Singer :</label>
+      <input type="text" name="singer" id="singer" placeholder="enter singer" />
+      <button>Click Me!</button>
+    </form>
+    <hr />
+    <form action="/delete?_method=DELETE" method="post">
+      <label for="songname">Song Name :</label>
+      <input
+        type="text"
+        name="songname"
+        id="songname"
+        placeholder="enter songname"
+      />
+      <button>Click Me!</button>
+    </form>
+    <hr />
+    <form action="/add">
+      <label for="add">Add fav song :</label>
+      <button id="add">Click Me!</button>
+    </form>
+    <hr />
+    <form action="/singer/film" method="post">
+      <label for="film">Film:</label>
+      <input type="text" name="film" id="film" placeholder="enter film" />
+      <br />
+      <label for="singer">Singer :</label>
+      <input type="text" name="singer" id="singer" placeholder="enter singer" />
+      <button>Click Me!</button>
+    </form>
+    <hr />
+    <form action="/update?_method=PUT" method="post">
+      <label for="song">Song:</label>
+      <input type="text" name="song" id="song" placeholder="enter song" />
+      <br />
+      <label for="actor">Actor :</label>
+      <input type="text" name="actor" id="actor" placeholder="enter actor" />
+      <br />
+      <label for="actress">Actress :</label>
+      <input
+        type="text"
+        name="actress"
+        id="actress"
+        placeholder="enter actress"
+      />
+      <button>Click Me!</button>
+    </form>
+    <hr />
+    <form action="/display">
+      <button>Click Me!</button>
+    </form>
+  </body>
+</html>
